@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Masters Coding Camp</title>
+	<link rel="stylesheet" href="static/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<header class="post-header">
+		<div class="head">
+			<h1>{{post.title}}</h1>
+			<p class="header-date">{{post.datetime}}</p>
+			<a href="/">
+			<svg>
+				<symbol id="arrow" viewBox="0 0 100 100" width="50px" height="40px">	
+					<polyline points="21.9,50.2 45.5,73.7 44,75.3 17.8,49.1 44,22.9 45.5,24.5 21.9,48 75.7,48 75.7,50.2 " fill="#ffffff"/>
+				</symbol>
+	    		<use xlink:href="#arrow"/>
+			</svg>
+		</a>
+		</div>
+	</header>
+	<div class="content">
+		<a href="/update{{post.pid}}" methods="GET">
+			<svg>
+				<symbol id="Layer_1" viewBox="0 0 100 100">	
+					<polyline points="80.2,51.6 51.4,51.6 51.4,22.6 48.9,22.6 48.9,51.6 19.9,51.6 19.9,54.1 48.9,54.1 48.9,83.1   51.4,83.1 51.4,54.1 80.4,54.1 80.4,51.6 " fill="#ffffff"/>
+				</symbol>
+	    		<use xlink:href="#Layer_1"/>
+			</svg>
+		</a>
+		<div class="post-content">
+			{{post.body}}
+		</div>
+	</div>
+	<footer>© 2016 Masters Academy</footer>
+</body>
+</html>
